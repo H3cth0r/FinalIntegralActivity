@@ -60,7 +60,7 @@ void read_file(string fileName, LinkedList<Server> & auxiliar_ll){
     while(getline(txt_file, line)){                                                                                                        //O(n)
       split(line, month, day, hour, ip, reason);  // splitting each line of txt and adding to                                              //O(n)
                                                   // corresponding variable.
-      auxiliar_ll.addLast(Server(month, stoi(day), hour, ip, reason));                                                                      //O(1)
+      auxiliar_ll.addLast(Server(month, stoi(day), hour, ip, reason));                                                                     //O(1)
     }
     txt_file.close();                             // closing connection to bitacora file                                                    //O(1)
   }
