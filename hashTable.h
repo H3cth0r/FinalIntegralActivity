@@ -143,7 +143,7 @@ class Hashtable{
       }
       /*
       operator overloading for checking whether two hastables are the same or not.
-      */
+      */ 
       bool operator == (const Hashtable<K, T> & other) const{                             //O(1)
         if(size != other.size) return false;                                              //O(1)
         for(int i = 0; i < size; i++) if(tabla[i].value != other.tabla[i].value && tabla[i].key != other.tabla[i].key) return false; //O(n)
