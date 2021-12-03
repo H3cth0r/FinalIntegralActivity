@@ -40,10 +40,10 @@ int main(int argc, char* argv[]){
     string command = commands.dequeue();                    // O(1)
     read_file(route, auxiliar_ll);                          // O(n)
     auxiliar_ll_size = auxiliar_ll.length();                // O(n)
-    Hashtable<string, int> attacked_ports(pow(auxiliar_ll_size,1.6));       // O(1)
-    Hashtable<string, int> directions(pow(auxiliar_ll_size,1.6));           // O(1)
-    Hashtable<string, int> sms_frequency(pow(auxiliar_ll_size,1.6));        // O(1)
-    Hashtable<int, int> weeks(pow(auxiliar_ll_size,1.6));                   // O(1)
+    Hashtable<string, int> attacked_ports(pow(auxiliar_ll_size,1.4));       // O(1)
+    Hashtable<string, int> directions(pow(auxiliar_ll_size,1.4));           // O(1)
+    Hashtable<string, int> sms_frequency(pow(auxiliar_ll_size,1.4));        // O(1)
+    Hashtable<int, int> weeks(pow(auxiliar_ll_size,1.4));                   // O(1)
 
 
     while(!commands.is_empty()){ // O(n)
